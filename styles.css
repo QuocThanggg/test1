@@ -1,0 +1,154 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Thiết lập font chung cho trang web */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /* Chia trang thành hai cột */
+    max-width: 1200px;
+    /* Độ rộng tối đa của trang web */
+    margin: 0 auto;
+    /* Canh giữa trang web trên màn hình */
+}
+    /* Phần tiêu đë trang web */
+header {
+    background-color:
+    I#C7cC19;
+    color: #fff;
+    padding: 20px; 
+    text-align: center;
+    grid-column: 1 / span 2;
+    /* Trái đều qua cả hai cột */
+}
+
+/* Phần menu điều hướng */ 
+nav {
+    background-color:
+    #ffa486;
+    color: O#fff;
+    text-align: center; 
+    padding: 10px;
+    grid-column: 1 / span 2;
+    /* Trải đều qua cả hai cột */
+}
+    
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline; 
+    margin-right: 20px;
+}
+/* Phần danh sách sản phẩm */
+.product-list {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    /* Hlen thi 3 san pham tren moi hang */
+    gap: 20px;
+    /* Khoảng cách giữa các sản phẩm */ 
+    padding: 20px;
+    grid-column: 1;
+/* Chỉ năm ở cột đầu tiên */
+}
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 10px; 
+    width: 100%;
+    text-align: center; 
+    /* Căn giữa nội dung trong sản phẩm */
+}
+.product-card img {
+    max-width: 100%; 
+    height: auto;
+}
+/* Phän sidebar */
+.sidebar {
+    background-color:#199cff;
+    color:#fff; 
+    padding: 10px; 
+    grid-column: 2;
+    /* Chỉ nằm ở cột thứ hai */
+}
+.social-icons { 
+    margin-top: 20px;
+}
+
+.social-icons a { 
+    color: #fff;
+    text-decoration: none; 
+    display: block; 
+    margin-bottom: 10px;
+}
+    /* Chinh lại bố cục cho màn hành thiết bị di động */ 
+    @media (max-width: 576px) {
+    .product-list {
+        grid-template-columns: 1fr;
+        /* Hien thi not san pham tren moi hang */
+    }
+    .product-card { 
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+    .sidebar {
+        grid-column: 1 / span 2;
+        /* Trái đều qua cả hai cột */
+    }
+    /* Chính lại bố cục cho phần footer */
+    .footer {
+        grid-template-columns: 1fr;
+        /* cột xếp chống lên nhau trên măn hành di động */
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    grid-column: 1/ span 2;
+    /* Spread evenly across both columns */
+    display: grid;
+}
+    /* Columns in the footer */
+.footer-item {
+    padding: 10px;
+}
+    @media (min-width: 768px) {
+        .footer {
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 columns on the computer */
+        }
+    }
+    
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.button1 {
+    border-radius: 2px; 
+}
+.button3 {  
+    border-radius: 8px; 
+}
+.button4 { 
+    border-radius: 12px; 
+}
+.button5 { 
+    border-radius: 50%;
+}
