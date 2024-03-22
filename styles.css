@@ -6,7 +6,7 @@
 /* Thiết lập font chung cho trang web */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #678f9b;
     display: grid;
     grid-template-columns: 70% 30%;
     /* Chia trang thành hai cột */
@@ -18,8 +18,8 @@ body {
     /* Phần tiêu đë trang web */
 header {
     background-color:
-    I#C7cC19;
-    color: #fff;
+    I#10e442;
+    color: #ed17e3;
     padding: 20px; 
     text-align: center;
     grid-column: 1 / span 2;
